@@ -1,0 +1,88 @@
+@import "../../assets/scss/variables";
+
+.home-banner {
+  background: url("../../assets/images/backgrounds/banner.png") no-repeat center
+    center;
+  background-size: cover;
+  .welcome {
+    .welcome-ctn {
+      width: 70%;
+      margin: 100px auto;
+      h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #0085ff;
+        margin-bottom: 19px;
+      }
+      h2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 32px;
+        /* identical to box height */
+
+        letter-spacing: 0.1em;
+
+        color: #151515;
+        margin-bottom: 58px;
+      }
+      .ant-btn {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #ffffff;
+        background: #151515;
+        height: 50px;
+        padding: 7px 24px;
+        border: none;
+      }
+    }
+  }
+  .options {
+    background: #ffffff;
+    opacity: 0.85;
+    padding: 60px 30px;
+    text-align: center;
+    .option-item {
+      margin-bottom: 64px;
+      img {
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #151515;
+        margin-bottom: 3px;
+      }
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+
+        color: rgba(0, 0, 0, 0.5);
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

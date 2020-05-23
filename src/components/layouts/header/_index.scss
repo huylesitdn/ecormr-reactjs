@@ -1,0 +1,52 @@
+@import "../../../assets/scss/variables";
+
+.header-page {
+  background: $colorWhite;
+  height: auto;
+  .header-ctn {
+    padding: 12px 0;
+    .nav-header {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin: 0 15px;
+        a {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #575757;
+          display: inline-flex;
+          align-items: center;
+          svg{
+            font-size: 18px;
+            margin-right: 7px;
+            fill: #0085FF;
+          }
+          &:hover{
+            color: #0085FF;
+          }
+        }
+      }
+    }
+    .logo-main{
+      width: 100%;
+      text-align: center;
+      a{
+        display: inline-block;
+        width: 227px;
+        height: 41px;
+        cursor: pointer;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "../../assets/scss/variables";
+
+.home-top-products {
+  background: $bgPage;
+  .top-products {
+    padding: 85px 0 127px;
+    h4 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: $colorBlue;
+      margin-bottom: 19px;
+    }
+    h2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #151515;
+      margin-bottom: 112px;
+    }
+    .products {
+      .product-card {
+        background: $bgWhite;
+        border-radius: 30px;
+        .actions {
+          padding: 15px 20px 0 20px;
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          .favorite {
+            font-size: 22px;
+            color: #000000;
+            opacity: 0.3;
+            svg {
+            }
+          }
+          .add-card {
+            float: right;
+            img {
+            }
+          }
+        }
+        .info {
+          padding: 0 15px 15px;
+          text-align: center;
+          img {
+          }
+          h6 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            /* or 143% */
+
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+            color: #202020;
+            margin-bottom: 11px;
+          }
+          .price {
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 20px;
+              text-align: center;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              margin: 0;
+              color: #202020;
+              span {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 13px;
+                text-decoration-line: line-through;
+                color: #969696;
+              }
+            }
+          }
+        }
+        .product-ft {
+          border-top: 1px solid #e0e4e8;
+          width: 100%;
+          display: inline-block;
+          border-radius: 0 0 30px 30px;
+          padding: 10px;
+          text-align: center;
+          a.buy-now {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+            color: #0085ff;
+
+            color: $colorBlue;
+          }
+        }
+      }
+    }
+  }
+}
