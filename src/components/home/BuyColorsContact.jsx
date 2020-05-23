@@ -3,7 +3,7 @@ import "./_buy-colors.scss";
 // ui
 import { Row, Col } from "antd";
 
-class BuyColors extends React.Component {
+class BuyColorsContact extends React.Component {
   render() {
     return (
       <div className="buy-colors">
@@ -29,4 +29,4 @@ class BuyColors extends React.Component {
   }
 }
 
-export default BuyColors;
+export default BuyColorsContact;

@@ -18,10 +18,10 @@ class TopProducts extends React.Component {
                 <Col md={6}>
                   <div className="product-card">
                     <div className="actions">
-                      <a href="" className="favorite">
+                      <a href="/" className="favorite">
                         <AiOutlineHeart />
                       </a>
-                      <a href="#" className="add-card">
+                      <a href="/" className="add-card">
                         <img
                           src="./assets/images/icons/shopping-bag.png"
                           alt=""
@@ -41,7 +41,7 @@ class TopProducts extends React.Component {
                       </div>
                     </div>
                     <div className="product-ft">
-                      <a href="#" className="buy-now">
+                      <a href="/" className="buy-now">
                         Buy Now
                       </a>
                     </div>
@@ -50,10 +50,10 @@ class TopProducts extends React.Component {
                 <Col md={6}>
                   <div className="product-card">
                     <div className="actions">
-                      <a href="" className="favorite">
+                      <a href="/" className="favorite">
                         <AiOutlineHeart />
                       </a>
-                      <a href="#" className="add-card">
+                      <a href="/" className="add-card">
                         <img
                           src="./assets/images/icons/shopping-bag.png"
                           alt=""
@@ -73,7 +73,7 @@ class TopProducts extends React.Component {
                       </div>
                     </div>
                     <div className="product-ft">
-                      <a href="#" className="buy-now">
+                      <a href="/" className="buy-now">
                         Buy Now
                       </a>
                     </div>
@@ -82,10 +82,10 @@ class TopProducts extends React.Component {
                 <Col md={6}>
                   <div className="product-card">
                     <div className="actions">
-                      <a href="" className="favorite">
+                      <a href="/" className="favorite">
                         <AiOutlineHeart />
                       </a>
-                      <a href="#" className="add-card">
+                      <a href="/" className="add-card">
                         <img
                           src="./assets/images/icons/shopping-bag.png"
                           alt=""
@@ -105,7 +105,7 @@ class TopProducts extends React.Component {
                       </div>
                     </div>
                     <div className="product-ft">
-                      <a href="#" className="buy-now">
+                      <a href="/" className="buy-now">
                         Buy Now
                       </a>
                     </div>
@@ -114,10 +114,10 @@ class TopProducts extends React.Component {
                 <Col md={6}>
                   <div className="product-card">
                     <div className="actions">
-                      <a href="" className="favorite">
+                      <a href="/" className="favorite">
                         <AiOutlineHeart />
                       </a>
-                      <a href="#" className="add-card">
+                      <a href="/" className="add-card">
                         <img
                           src="./assets/images/icons/shopping-bag.png"
                           alt=""
@@ -137,7 +137,7 @@ class TopProducts extends React.Component {
                       </div>
                     </div>
                     <div className="product-ft">
-                      <a href="#" className="buy-now">
+                      <a href="/" className="buy-now">
                         Buy Now
                       </a>
                     </div>

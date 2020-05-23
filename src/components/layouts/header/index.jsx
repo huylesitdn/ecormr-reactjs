@@ -1,7 +1,7 @@
 import React from "react";
 import "./_index.scss";
 // ui
-import { Layout, Menu, Row, Col } from "antd";
+import { Layout, Row, Col } from "antd";
 // icons
 import {
   AiOutlineShoppingCart,
@@ -9,7 +9,7 @@ import {
   AiOutlineUser
 } from "react-icons/ai";
 
-const { Header, Content, Footer } = Layout;
+const { Header,  } = Layout;
 
 class HeaderPage extends React.Component {
   constructor(props) {
@@ -29,19 +29,19 @@ class HeaderPage extends React.Component {
               <Col md={8}>
                 <ul className="nav-header">
                   <li>
-                    <a href="">Lenses</a>
+                    <a href="/">Lenses</a>
                   </li>
                   <li>
-                    <a href="">Eyewears</a>
+                    <a href="/">Eyewears</a>
                   </li>
                   <li>
-                    <a href="">About Us</a>
+                    <a href="/">About Us</a>
                   </li>
                 </ul>
               </Col>
               <Col md={8}>
                 <div className="logo-main">
-                  <a href="">
+                  <a href="/">
                     <img src="./assets/images/icons/logo.svg" alt="" />
                   </a>
                 </div>
@@ -49,17 +49,17 @@ class HeaderPage extends React.Component {
               <Col md={8}>
                 <ul className="nav-header">
                   <li>
-                    <a href="">
+                    <a href="/">
                       <AiOutlineSearch /> Search
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="/">
                       <AiOutlineShoppingCart /> Cart
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="/">
                       <AiOutlineUser /> Account
                     </a>
                   </li>

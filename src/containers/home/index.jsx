@@ -4,15 +4,15 @@ import "./_index.scss";
 import HeaderPage from "../../components/layouts/header";
 import Banner from "../../components/home/Banner";
 import TopProducts from "../../components/home/TopProducts";
-import BuyColors from "../../components/home/BuyColors";
+import BuyColorsContact from "../../components/home/BuyColorsContact";
 import DailyDisposable from "../../components/home/DailyDisposable";
 import Partners from "../../components/home/Partners";
-import Slider from "../../components/home/Silder";
-import FooterPage from '../../components/layouts/footer'
+import Sliders from "../../components/home/Sliders";
+import FooterPage from "../../components/layouts/footer";
 // ui
-import { Layout, Menu } from "antd";
+import { Layout } from "antd";
 
-const { Header, Content, Footer } = Layout;
+const { Content } = Layout;
 
 class Home extends React.Component {
   constructor(props) {
@@ -29,14 +29,14 @@ class Home extends React.Component {
           <div className="home-ctn">
             <Banner />
             <TopProducts />
-            <BuyColors />
+            <BuyColorsContact />
             <DailyDisposable />
             <Partners />
-            {/* <Slider /> */}
+            <Sliders />
           </div>
         </Content>
 
-        {/* <FooterPage /> */}
+        <FooterPage />
       </Layout>
     );
   }

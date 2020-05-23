@@ -1,0 +1,27 @@
+@import "../../assets/scss/variables";
+
+.silder-page {
+  .container {
+    position: relative;
+  }
+  .action-next {
+    position: absolute;
+    right: -80px;
+    top: 120px;
+    cursor: pointer;
+  }
+  .action-prev {
+    position: absolute;
+    left: -80px;
+    top: 120px;
+    cursor: pointer;
+  }
+  .slider-home {
+    padding: 70px 0;
+    .slider-item {
+      img {
+        display: inline-block;
+      }
+    }
+  }
+}
