@@ -98,7 +98,7 @@ class FooterPage extends React.Component {
           </div>
           <div className="ft-bottom">
             <Row gutter={24}>
-              <Col md={16}>
+              <Col xl={16} lg={17} xs={24}>
                 <ul className="bar-ft">
                   <li>
                     <a href="/">Copyright ©2020 All rights reserved </a>
@@ -111,7 +111,7 @@ class FooterPage extends React.Component {
                   </li>
                 </ul>
               </Col>
-              <Col md={8}>
+              <Col xl={8} lg={7} xs={24}>
                 <div className="view-payments">
                   <img src="./assets/images/cards.png" alt="" />
                 </div>

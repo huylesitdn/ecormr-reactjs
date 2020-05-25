@@ -11,12 +11,12 @@ class Sliders extends React.Component {
   }
 
   handleNext = () => {
-    this.slRef.current.slick.slickNext()
-  }
+    this.slRef.current.slick.slickNext();
+  };
 
   handlePrev = () => {
-    this.slRef.current.slick.slickPrev()
-  }
+    this.slRef.current.slick.slickPrev();
+  };
 
   render() {
     return (
@@ -28,89 +28,121 @@ class Sliders extends React.Component {
           <div className="action-next" onClick={() => this.handleNext()}>
             <img src="./assets/images/icons/right.png" alt="" />
           </div>
-          <Carousel
-            autoplay
-            className="slider-home"
-            ref={this.slRef}
-          >
+          <Carousel autoplay className="slider-home" ref={this.slRef}>
             <div className="slider-item">
               <Row gutter={24}>
                 <Col md={4}>
-                  <img src="./assets/images/slider/s1.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s1.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s2.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s2.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s3.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s3.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s4.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s4.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s5.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s5.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s6.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s6.png" alt="" />
+                  </div>
                 </Col>
               </Row>
             </div>
             <div className="slider-item">
               <Row gutter={24}>
                 <Col md={4}>
-                  <img src="./assets/images/slider/s1.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s1.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s2.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s2.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s3.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s3.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s4.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s4.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s5.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s5.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s6.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s6.png" alt="" />
+                  </div>
                 </Col>
               </Row>
             </div>
             <div className="slider-item">
               <Row gutter={24}>
                 <Col md={4}>
-                  <img src="./assets/images/slider/s1.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s1.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s2.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s2.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s3.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s3.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s4.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s4.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s5.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s5.png" alt="" />
+                  </div>
                 </Col>
 
                 <Col md={4}>
-                  <img src="./assets/images/slider/s6.png" alt="" />
+                  <div className="slider-image">
+                    <img src="./assets/images/slider/s6.png" alt="" />
+                  </div>
                 </Col>
               </Row>
             </div>

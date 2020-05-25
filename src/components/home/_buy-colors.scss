@@ -34,9 +34,26 @@
           color: #151515;
         }
       }
-      .img-colors {
-        img {
-          width: 100%;
+    }
+    .img-colors {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .buy-colors {
+    .colors-ctn {
+      .colors-contact {
+        .info {
+          h4 {
+            font-size: 14px;
+          }
+          h2 {
+            font-size: 24px;
+          }
         }
       }
     }

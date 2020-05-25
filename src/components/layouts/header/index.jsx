@@ -1,16 +1,39 @@
 import React from "react";
 import "./_index.scss";
 // ui
-import { Layout, Row, Col } from "antd";
+import { Layout, Row, Col, Drawer } from "antd";
+// icons
+import { MenuOutlined } from "@ant-design/icons";
+
 const { Header } = Layout;
 
 class HeaderPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { visible: false, placement: "left" };
   }
 
+  showDrawer = () => {
+    this.setState({
+      visible: true
+    });
+  };
+
+  onClose = () => {
+    this.setState({
+      visible: false
+    });
+  };
+
+  onChange = e => {
+    this.setState({
+      placement: e.target.value
+    });
+  };
+
   render() {
+    const { placement, visible } = this.state;
+
     return (
       <Header
         className="header-page"
@@ -19,7 +42,7 @@ class HeaderPage extends React.Component {
         <div className="container">
           <div className="header-ctn">
             <Row gutter={24}>
-              <Col md={8}>
+              <Col lg={8} md={9} sm={0}>
                 <ul className="nav-header nav-left">
                   <li>
                     <a href="/">Lenses</a>
@@ -32,14 +55,14 @@ class HeaderPage extends React.Component {
                   </li>
                 </ul>
               </Col>
-              <Col md={8}>
+              <Col lg={8} md={6} sm={6}>
                 <div className="logo-main">
                   <a href="/">
                     <img src="./assets/images/icons/logo.svg" alt="" />
                   </a>
                 </div>
               </Col>
-              <Col md={8}>
+              <Col lg={8} md={9} sm={0}>
                 <ul className="nav-header nav-right">
                   <li>
                     <a href="/">
@@ -72,6 +95,53 @@ class HeaderPage extends React.Component {
                     </a>
                   </li>
                 </ul>
+              </Col>
+              <Col md={0} sm={18}>
+                <div className="barMobile">
+                  <a
+                    className="btn-menu-mb"
+                    onClick={() => this.setState({ visible: true })}
+                  >
+                    <MenuOutlined />
+                  </a>
+                </div>
+
+                <Drawer
+                  title={
+                    <div className="mb-log">
+                      <a href="/">
+                        <img src="./assets/images/icons/logo.svg" alt="" />
+                      </a>
+                    </div>
+                  }
+                  placement={placement}
+                  closable={false}
+                  onClose={this.onClose}
+                  visible={visible}
+                  key={placement}
+                  className="popup-menu-mb"
+                >
+                  <ul className="navBar-mb">
+                    <li className="navBar-item">
+                      <a href="#">Lenses</a>
+                    </li>
+                    <li className="navBar-item">
+                      <a href="#">Eyewears</a>
+                    </li>
+                    <li className="navBar-item">
+                      <a href="#">About Us</a>
+                    </li>
+                    <li className="navBar-item">
+                      <a href="#">Search</a>
+                    </li>
+                    <li className="navBar-item">
+                      <a href="#">Cart</a>
+                    </li>
+                    <li className="navBar-item">
+                      <a href="#">Account</a>
+                    </li>
+                  </ul>
+                </Drawer>
               </Col>
             </Row>
           </div>

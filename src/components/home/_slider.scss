@@ -19,9 +19,38 @@
   .slider-home {
     padding: 70px 0;
     .slider-item {
-      img {
-        display: inline-block;
+      .slider-image {
+        img {
+          display: inline-block;
+          width: 100%;
+        }
       }
+    }
+  }
+}
+
+
+@media(max-width: 1024px){
+  .silder-page{
+    .action-next{
+      width: 30px;
+      right: -10px;
+      top: 110px;
+      img{
+        width: 100%;
+      }
+    }
+    .action-prev{
+      width: 30px;
+      left: -10px;
+      top: 110px;
+      img{
+        width: 100%;
+      }
+    }
+    .slider-home{
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }

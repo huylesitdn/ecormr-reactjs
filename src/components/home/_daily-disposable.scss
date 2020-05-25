@@ -35,3 +35,22 @@
     }
   }
 }
+
+// responsive
+@media(max-width: 1024px){
+  .daily-disposable{
+    .daily-img{
+    }
+    .daily-ctn{
+      .info{
+        padding: 0 60px;
+        h4{
+          font-size: 14px;
+        }
+        h2{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

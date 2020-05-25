@@ -84,15 +84,57 @@
 
         color: rgba(0, 0, 0, 0.5);
       }
-      &:last-child{
+      &:last-child {
         margin-bottom: 0;
       }
     }
   }
 }
 
-@media(max-width: 1024px){
-  .home-banner{
+@media (max-width: 1024px) {
+  .home-banner {
+    .welcome {
+      .welcome-ctn {
+        h4 {
+        }
+      }
+    }
+    .options {
+      .option-item {
+        margin-bottom: 50px;
+        .img-title {
+          width: 25%;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        p {
+          font-style: 12px;
+        }
+      }
+    }
+  }
+}
 
+@media(max-width: 991px){
+  .home-banner{
+    .welcome{
+      .welcome-ctn{
+
+      }
+    }
+    .options{
+      .option-item{
+        .img-title{
+          width: 45px;
+        }
+        h3{
+
+        }
+        p{
+
+        }
+      }
+    }
   }
 }

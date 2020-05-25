@@ -57,8 +57,18 @@ h1,h2,h3,h4,h5,h6,p,a,button,input,label,i,table,th,td,tr,span {
 }
 
 @media (max-width: 1024px){
+  .container{
+    max-width: auto;
+    margin: 0 15px;
+  }
   .main-layout{
     margin-top: 74px;
+  }
+}
+
+@media(max-width: 991px){
+  .main-layout{
+    margin-top: 64px;
   }
 }
 
