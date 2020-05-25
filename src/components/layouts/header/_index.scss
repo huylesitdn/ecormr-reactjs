@@ -3,6 +3,7 @@
 .header-page {
   background: $colorWhite;
   height: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
   .header-ctn {
     padding: 12px 0;
     .nav-header {
@@ -10,10 +11,15 @@
       margin: 0;
       list-style: none;
       width: 100%;
-      text-align: center;
+      text-align: left;
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
       li {
         display: inline-block;
-        margin: 0 15px;
+        height: auto;
+        padding: 0;
+        line-height: 0;
         a {
           font-style: normal;
           font-weight: 500;
@@ -24,6 +30,12 @@
           color: #575757;
           display: inline-flex;
           align-items: center;
+          height: 52px;
+          box-sizing: border-box;
+          padding: 7px 15px;
+          img{
+            margin-right: 10px;
+          }
           svg{
             font-size: 18px;
             margin-right: 7px;
@@ -34,6 +46,12 @@
           }
         }
       }
+    }
+    .nav-left{
+      text-align: left;
+    }
+    .nav-right{
+      text-align: right;
     }
     .logo-main{
       width: 100%;

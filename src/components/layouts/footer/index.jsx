@@ -126,7 +126,12 @@ class FooterPage extends React.Component {
           </div>
 
           <div className="action-cart">
-            <Badge count={3}>
+            <Badge
+              count={3}
+              style={{
+                background: "#FF8F40",
+              }}
+            >
               <img src="./assets/images/icons/cart.png" alt="" />
             </Badge>
           </div>

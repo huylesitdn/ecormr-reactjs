@@ -37,10 +37,13 @@
     .partner-item {
       border-radius: 30px;
       .item-ctn {
-        background: rgba(0, 72, 138, 0.39);
+        // background: rgba(0, 72, 138, 0.39);
         // mix-blend-mode: overlay;
         padding: 80px 21px 30px;
         border-radius: 30px;
+        background: #00488a;
+        mix-blend-mode: overlay;
+        opacity: 0.4;
         h2 {
           font-style: normal;
           font-weight: 500;
@@ -83,17 +86,17 @@
     .air-optix {
       background: url("../../assets/images/backgrounds/bg1.png") no-repeat
         center center;
-        background-size: cover;
+      background-size: cover;
     }
     .fresh-look {
       background: url("../../assets/images/backgrounds/bg2.png") no-repeat
         center center;
-        background-size: cover;
+      background-size: cover;
     }
     .easy-fit {
       background: url("../../assets/images/backgrounds/bg3.png") no-repeat
         center center;
-        background-size: cover;
+      background-size: cover;
     }
   }
   .partners-bottom {

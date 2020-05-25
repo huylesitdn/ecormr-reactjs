@@ -2,14 +2,7 @@ import React from "react";
 import "./_index.scss";
 // ui
 import { Layout, Row, Col } from "antd";
-// icons
-import {
-  AiOutlineShoppingCart,
-  AiOutlineSearch,
-  AiOutlineUser
-} from "react-icons/ai";
-
-const { Header,  } = Layout;
+const { Header } = Layout;
 
 class HeaderPage extends React.Component {
   constructor(props) {
@@ -27,7 +20,7 @@ class HeaderPage extends React.Component {
           <div className="header-ctn">
             <Row gutter={24}>
               <Col md={8}>
-                <ul className="nav-header">
+                <ul className="nav-header nav-left">
                   <li>
                     <a href="/">Lenses</a>
                   </li>
@@ -47,20 +40,35 @@ class HeaderPage extends React.Component {
                 </div>
               </Col>
               <Col md={8}>
-                <ul className="nav-header">
+                <ul className="nav-header nav-right">
                   <li>
                     <a href="/">
-                      <AiOutlineSearch /> Search
+                      <img
+                        className="nav-icon"
+                        src="./assets/images/icons/search.png"
+                        alt=""
+                      />{" "}
+                      Search
                     </a>
                   </li>
                   <li>
                     <a href="/">
-                      <AiOutlineShoppingCart /> Cart
+                      <img
+                        className="nav-icon"
+                        src="./assets/images/icons/shopping-bag.png"
+                        alt=""
+                      />{" "}
+                      Cart
                     </a>
                   </li>
                   <li>
                     <a href="/">
-                      <AiOutlineUser /> Account
+                      <img
+                        className="nav-icon"
+                        src="./assets/images/icons/user.png"
+                        alt=""
+                      />{" "}
+                      Account
                     </a>
                   </li>
                 </ul>
