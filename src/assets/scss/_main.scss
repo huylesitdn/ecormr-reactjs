@@ -56,6 +56,12 @@ h1,h2,h3,h4,h5,h6,p,a,button,input,label,i,table,th,td,tr,span {
   }
 }
 
+@media (max-width: 1024px){
+  .main-layout{
+    margin-top: 74px;
+  }
+}
+
 @media (max-width: 767px){
   .container{
     max-width: 720px;

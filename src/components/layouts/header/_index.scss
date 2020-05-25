@@ -68,3 +68,32 @@
     }
   }
 }
+
+
+// responsive
+@media(max-width: 1024px){
+  .header-page{
+    .header-ctn{
+      padding: 5px 0;
+      .nav-header{
+        li{
+          a{
+            font-size: 12px;
+            height: 48px;
+            padding: 0 10px;
+          }
+        }
+      }
+      .logo-main{
+        a{
+          height: auto;
+          width: 200px;
+          line-height: 27px;
+          img{
+
+          }
+        }
+      }
+    }
+  }
+}

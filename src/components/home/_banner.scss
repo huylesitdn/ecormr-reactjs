@@ -5,9 +5,13 @@
     center;
   background-size: cover;
   .welcome {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
     .welcome-ctn {
       width: 70%;
-      margin: 100px auto;
+      margin: 0 auto;
       h4 {
         font-style: normal;
         font-weight: 500;
@@ -84,5 +88,11 @@
         margin-bottom: 0;
       }
     }
+  }
+}
+
+@media(max-width: 1024px){
+  .home-banner{
+
   }
 }

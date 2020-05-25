@@ -15,8 +15,10 @@ class DailyDisposable extends React.Component {
           </Col>
           <Col md={12}>
             <div className="daily-ctn">
-              <h4>DAILY DISPOSABLE</h4>
-              <h2>DESIGNED WITH YOUR TOTAL EYEWEAR EXPERIENCE IN MIND</h2>
+              <div className="info">
+                <h4>DAILY DISPOSABLE</h4>
+                <h2>DESIGNED WITH YOUR TOTAL EYEWEAR EXPERIENCE IN MIND</h2>
+              </div>
             </div>
           </Col>
         </Row>

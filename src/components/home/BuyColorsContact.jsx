@@ -11,9 +11,11 @@ class BuyColorsContact extends React.Component {
           <div className="colors-ctn">
             <Row gutter={24}>
               <Col md={12}>
-                <div className="info">
-                  <h4>BUY COLOR CONTACT LENSES</h4>
-                  <h2>DESIGNED WITH YOUR TOTAL EYEWEAR EXPERIENCE IN MIND</h2>
+                <div className="colors-contact">
+                  <div className="info">
+                    <h4>BUY COLOR CONTACT LENSES</h4>
+                    <h2>DESIGNED WITH YOUR TOTAL EYEWEAR EXPERIENCE IN MIND</h2>
+                  </div>
                 </div>
               </Col>
               <Col md={12}>
