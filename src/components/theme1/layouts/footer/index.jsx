@@ -18,7 +18,7 @@ class FooterPage extends React.Component {
         <div className="container">
           <div className="ft-top">
             <Row gutter={24}>
-              <Col md={12}>
+              <Col md={12} xs={24}>
                 <div className="ft-left">
                   <div className="ft-logo">
                     <a href="/">
@@ -47,7 +47,7 @@ class FooterPage extends React.Component {
                   </ul>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={4} sm={8} xs={8}>
                 <div className="ft-right">
                   <h3>Quick Links</h3>
                   <ul>
@@ -63,7 +63,7 @@ class FooterPage extends React.Component {
                   </ul>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={4} sm={8} xs={8}>
                 <div className="ft-right">
                   <h3>Our Story</h3>
                   <ul>
@@ -79,7 +79,7 @@ class FooterPage extends React.Component {
                   </ul>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={4} sm={8} xs={8}>
                 <div className="ft-right">
                   <h3>Help</h3>
                   <ul>

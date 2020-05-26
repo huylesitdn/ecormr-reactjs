@@ -138,3 +138,58 @@
     }
   }
 }
+
+@media(max-width: 768px){
+  .home-banner{
+    .welcome{
+      padding: 60px 15px;
+      .welcome-ctn{
+        width: 100%;
+        text-align: center;
+        h4{
+          font-size: 14px;
+        }
+        h2{
+          font-size: 24px;
+          margin-bottom: 40px;
+        }
+        .ant-btn{
+          font-size: 13px;
+          padding: 10px 18px;
+          height: auto;
+        }
+      }
+    }
+    .options{
+      .option-item{
+        .img-title{
+
+        }
+        h3{
+
+        }
+        p{
+
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 376px){
+  .home-banner{
+    .welcome{
+      .welcome-ctn{
+        h4{
+          font-size: 12px;
+        }
+        h2{
+          font-size: 18px;
+        }
+        .ant-btn{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

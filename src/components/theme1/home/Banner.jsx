@@ -13,7 +13,7 @@ class Banner extends React.Component {
     return (
       <div className="home-banner">
         <Row gutter={0}>
-          <Col lg={18} xl={19} md={16}>
+          <Col lg={18} xl={19} md={16} xs={24}>
             <div className="welcome">
               <div className="welcome-ctn">
                 <h4>Welcome</h4>
@@ -22,7 +22,7 @@ class Banner extends React.Component {
               </div>
             </div>
           </Col>
-          <Col lg={6} xl={5} md={8}>
+          <Col lg={6} xl={5} md={8} xs={24}>
             <div className="options">
               <div className="option-item">
                 <img

@@ -108,3 +108,44 @@
     margin-top: -100px;
   }
 }
+
+
+@media(max-width: 768px){
+  .partners{
+    .partners-top{
+      margin-top: 45px;
+      .partners-title{
+        h2{
+          font-size: 14px;
+        }
+        h1{
+          font-size: 24px;
+        }
+      }
+      .partner-item{
+        margin-bottom: 24px;
+      }
+    }
+    .partners-bottom{
+      height: 80px;
+      margin-top: 0;
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 376px){
+  .partners{
+    .partners-top{
+      margin-top: 0;
+      .partners-title{
+        h2{
+          font-size: 12px;
+        }
+        h1{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

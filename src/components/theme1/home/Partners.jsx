@@ -14,7 +14,7 @@ class Partners extends React.Component {
               <h1>Popular Brands</h1>
             </div>
             <Row gutter={30}>
-              <Col md={8}>
+              <Col md={8} xs={24}>
                 <div className="partner-item air-optix">
                   <div className="item-ctn">
                     <h2>Air Optix</h2>
@@ -23,7 +23,7 @@ class Partners extends React.Component {
                   </div>
                 </div>
               </Col>
-              <Col md={8}>
+              <Col md={8} xs={24}>
                 <div className="partner-item fresh-look">
                   <div className="item-ctn">
                     <h2>Fresh Look</h2>
@@ -32,7 +32,7 @@ class Partners extends React.Component {
                   </div>
                 </div>
               </Col>
-              <Col md={8}>
+              <Col md={8} xs={24}>
                 <div className="partner-item easy-fit">
                   <div className="item-ctn">
                     <h2>Easy Fit</h2>

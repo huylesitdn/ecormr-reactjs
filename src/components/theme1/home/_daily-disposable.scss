@@ -54,3 +54,32 @@
     }
   }
 }
+
+@media(max-width: 768px){
+  .daily-disposable{
+    .daily-img{
+    }
+    .daily-ctn{
+      .info{
+        padding: 45px 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media(max-width: 376px){
+  .daily-disposable{
+    .daily-ctn{
+      .info{
+        h4{
+          font-size: 12px ;
+          margin-bottom: 24px;
+        }
+        h2{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

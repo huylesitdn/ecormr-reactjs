@@ -14,7 +14,6 @@ class AllProducts extends React.Component {
   }
 
   itemRender(current, type, originalElement) {
-    console.log("type: ", type)
     if (type === "prev") {
       return <a><LeftOutlined /> PREV</a>;
     }

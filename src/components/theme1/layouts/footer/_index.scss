@@ -210,16 +210,59 @@
         width: 50px;
         height: 50px;
         padding: 10px;
-        img{
+        img {
           width: 100%;
         }
       }
-      .action-cart{
+      .action-cart {
         width: 50px;
         height: 50px;
         padding: 10px;
-        img{
+        img {
           width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-page {
+    .ft-top {
+      margin-bottom: 30px;
+      .ft-left {
+        margin-bottom: 30px;
+      }
+      .ft-right {
+        h3 {
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+        ul {
+          li {
+            margin-bottom: 5px;
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-page {
+    margin-bottom: 0;
+    .ft-bottom {
+      .bar-ft {
+        width: 100%;
+        li {
+          width: 100%;
+          a{
+            padding: 5px;
+            border: none;
+          }
         }
       }
     }

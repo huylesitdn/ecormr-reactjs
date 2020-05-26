@@ -116,8 +116,10 @@
     .header-ctn {
       .barMobile {
         text-align: right;
-        a {
+        .btn-menu-mb {
           font-size: 18px;
+          color: $colorBlue;
+          cursor: pointer;
         }
       }
     }

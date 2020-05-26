@@ -59,3 +59,39 @@
     }
   }
 }
+
+
+@media(max-width: 768px){
+  .buy-colors{
+    .colors-ctn{
+      .colors-contact{
+        .info{
+          text-align: center;
+          h4{
+            font-size: 14px;
+          }
+          h2{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 376px){
+  .buy-colors{
+    .colors-ctn{
+      .colors-contact{
+        .info{
+          h4{
+            font-size: 12px;
+          }
+          h2{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

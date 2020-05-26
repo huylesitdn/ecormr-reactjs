@@ -15,7 +15,7 @@ class TopProducts extends React.Component {
             <h2>Our Top Selling Lenses</h2>
             <div className="products">
               <Row gutter={5}>
-                <Col md={6}>
+                <Col md={6} sm={12} xs={24}>
                   <div className="product-card">
                     <div className="actions">
                       <a href="/" className="favorite">
@@ -47,7 +47,7 @@ class TopProducts extends React.Component {
                     </div>
                   </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={12} xs={24}>
                   <div className="product-card">
                     <div className="actions">
                       <a href="/" className="favorite">
@@ -79,7 +79,7 @@ class TopProducts extends React.Component {
                     </div>
                   </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={12} xs={24}>
                   <div className="product-card">
                     <div className="actions">
                       <a href="/" className="favorite">
@@ -111,7 +111,7 @@ class TopProducts extends React.Component {
                     </div>
                   </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={12} xs={24}>
                   <div className="product-card">
                     <div className="actions">
                       <a href="/" className="favorite">

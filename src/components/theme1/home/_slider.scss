@@ -54,3 +54,34 @@
     }
   }
 }
+
+@media(max-width: 768px){
+  .silder-page{
+    .action-next{
+      width: 20px;
+      top: 75px;
+    }
+    .action-prev{
+      width: 20px;
+      top: 75px;
+    }
+    .slider-home{
+      padding: 45px 0;
+    }
+  }
+}
+
+@media(max-width: 576px){
+  .silder-page{
+    .action-next, .action-prev{
+      top: 65px;
+      width: 15px;
+    }
+  }
+}
+
+@media(max-width: 376px){
+  .silder-page{
+    display: none;
+  }
+}

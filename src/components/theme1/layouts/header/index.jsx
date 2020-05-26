@@ -43,7 +43,7 @@ class HeaderPage extends React.Component {
         <div className="container">
           <div className="header-ctn">
             <Row gutter={24}>
-              <Col lg={8} md={9} sm={0}>
+              <Col lg={8} md={9} xs={0}>
                 <ul className="nav-header nav-left">
                   <li>
                     <a href="/">Lenses</a>
@@ -56,7 +56,7 @@ class HeaderPage extends React.Component {
                   </li>
                 </ul>
               </Col>
-              <Col lg={8} md={6} sm={6}>
+              <Col lg={8} md={6} sm={8} xs={12}>
                 <div className="logo-main">
                   <a href="/">
                     <img
@@ -66,7 +66,7 @@ class HeaderPage extends React.Component {
                   </a>
                 </div>
               </Col>
-              <Col lg={8} md={9} sm={0}>
+              <Col lg={8} md={9} xs={0}>
                 <ul className="nav-header nav-right">
                   <li>
                     <a href="/">
@@ -100,7 +100,7 @@ class HeaderPage extends React.Component {
                   </li>
                 </ul>
               </Col>
-              <Col md={0} sm={18}>
+              <Col md={0} sm={16} xs={12}>
                 <div className="barMobile">
                   <div
                     className="btn-menu-mb"
