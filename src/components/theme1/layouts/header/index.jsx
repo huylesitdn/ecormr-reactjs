@@ -1,5 +1,6 @@
 import React from "react";
 import "./_index.scss";
+import { URL_MEDIA } from "../../../../config";
 // ui
 import { Layout, Row, Col, Drawer } from "antd";
 // icons
@@ -58,7 +59,10 @@ class HeaderPage extends React.Component {
               <Col lg={8} md={6} sm={6}>
                 <div className="logo-main">
                   <a href="/">
-                    <img src="./assets/images/icons/logo.svg" alt="" />
+                    <img
+                      src={`${URL_MEDIA}assets/images/icons/logo.svg`}
+                      alt=""
+                    />
                   </a>
                 </div>
               </Col>
@@ -68,7 +72,7 @@ class HeaderPage extends React.Component {
                     <a href="/">
                       <img
                         className="nav-icon"
-                        src="./assets/images/icons/search.png"
+                        src={`${URL_MEDIA}assets/images/icons/search.png`}
                         alt=""
                       />{" "}
                       Search
@@ -78,7 +82,7 @@ class HeaderPage extends React.Component {
                     <a href="/">
                       <img
                         className="nav-icon"
-                        src="./assets/images/icons/shopping-bag.png"
+                        src={`${URL_MEDIA}assets/images/icons/shopping-bag.png`}
                         alt=""
                       />{" "}
                       Cart
@@ -88,7 +92,7 @@ class HeaderPage extends React.Component {
                     <a href="/">
                       <img
                         className="nav-icon"
-                        src="./assets/images/icons/user.png"
+                        src={`${URL_MEDIA}assets/images/icons/user.png`}
                         alt=""
                       />{" "}
                       Account
@@ -98,19 +102,22 @@ class HeaderPage extends React.Component {
               </Col>
               <Col md={0} sm={18}>
                 <div className="barMobile">
-                  <a
+                  <div
                     className="btn-menu-mb"
                     onClick={() => this.setState({ visible: true })}
                   >
                     <MenuOutlined />
-                  </a>
+                  </div>
                 </div>
 
                 <Drawer
                   title={
                     <div className="mb-log">
                       <a href="/">
-                        <img src="./assets/images/icons/logo.svg" alt="" />
+                        <img
+                          src={`${URL_MEDIA}assets/images/icons/logo.svg`}
+                          alt=""
+                        />
                       </a>
                     </div>
                   }
@@ -123,22 +130,22 @@ class HeaderPage extends React.Component {
                 >
                   <ul className="navBar-mb">
                     <li className="navBar-item">
-                      <a href="#">Lenses</a>
+                      <a href="/">Lenses</a>
                     </li>
                     <li className="navBar-item">
-                      <a href="#">Eyewears</a>
+                      <a href="/">Eyewears</a>
                     </li>
                     <li className="navBar-item">
-                      <a href="#">About Us</a>
+                      <a href="/">About Us</a>
                     </li>
                     <li className="navBar-item">
-                      <a href="#">Search</a>
+                      <a href="/">Search</a>
                     </li>
                     <li className="navBar-item">
-                      <a href="#">Cart</a>
+                      <a href="/">Cart</a>
                     </li>
                     <li className="navBar-item">
-                      <a href="#">Account</a>
+                      <a href="/">Account</a>
                     </li>
                   </ul>
                 </Drawer>

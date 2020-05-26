@@ -1,5 +1,6 @@
 import React from "react";
 import "./_index.scss";
+import { URL_MEDIA } from '../../../../config'
 // ui
 import { Layout, Row, Col, Badge } from "antd";
 import {
@@ -21,7 +22,7 @@ class FooterPage extends React.Component {
                 <div className="ft-left">
                   <div className="ft-logo">
                     <a href="/">
-                      <img src="./assets/images/icons/logo.svg" alt="ft-logo" />
+                      <img src={`${URL_MEDIA}assets/images/icons/logo.svg`} alt="ft-logo" />
                     </a>
                   </div>
                   <ul className="ft-info">
@@ -113,7 +114,7 @@ class FooterPage extends React.Component {
               </Col>
               <Col xl={8} lg={7} xs={24}>
                 <div className="view-payments">
-                  <img src="./assets/images/cards.png" alt="" />
+                  <img src={`${URL_MEDIA}assets/images/cards.png`} alt="" />
                 </div>
               </Col>
             </Row>
@@ -122,7 +123,7 @@ class FooterPage extends React.Component {
 
         <div className="actions-pages">
           <div className="action-messages">
-            <img src="./assets/images/icons/messages.png" alt="" />
+            <img src={`${URL_MEDIA}assets/images/icons/messages.png`} alt="" />
           </div>
 
           <div className="action-cart">
@@ -132,7 +133,7 @@ class FooterPage extends React.Component {
                 background: "#FF8F40",
               }}
             >
-              <img src="./assets/images/icons/cart.png" alt="" />
+              <img src={`${URL_MEDIA}assets/images/icons/cart.png`} alt="" />
             </Badge>
           </div>
         </div>

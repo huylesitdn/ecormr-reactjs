@@ -1,0 +1,38 @@
+@import "../../../assets/scss/variables";
+
+.navbar-categories {
+  .navbar {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    .navbar-item {
+      border-bottom: 2px solid #fff;
+      padding: 29px 0 27px;
+      display: inline-block;
+      margin: 0 30px;
+      a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        padding: 7px 0;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #9CADBD;
+
+        &:hover{
+          cursor: pointer;
+          color: $colorBlue;
+        }
+      }
+    }
+    .active{
+      border-color: $colorBlue;
+      a{
+        color: $colorBlue;
+      }
+    }
+  }
+}

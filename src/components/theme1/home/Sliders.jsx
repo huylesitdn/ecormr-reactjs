@@ -1,5 +1,6 @@
 import React from "react";
 import "./_slider.scss";
+import { URL_MEDIA } from "../../../config";
 // ui
 import { Carousel, Row, Col } from "antd";
 
@@ -23,47 +24,47 @@ class Sliders extends React.Component {
       <div className="silder-page">
         <div className="container">
           <div className="action-prev" onClick={() => this.handlePrev()}>
-            <img src="./assets/images/icons/left.png" alt="" />
+            <img src={`${URL_MEDIA}assets/images/icons/left.png`} alt="" />
           </div>
           <div className="action-next" onClick={() => this.handleNext()}>
-            <img src="./assets/images/icons/right.png" alt="" />
+            <img src={`${URL_MEDIA}assets/images/icons/right.png`} alt="" />
           </div>
           <Carousel autoplay className="slider-home" ref={this.slRef}>
             <div className="slider-item">
               <Row gutter={24}>
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s1.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s1.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s2.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s2.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s3.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s3.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s4.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s4.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s5.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s5.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s6.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s6.png`} alt="" />
                   </div>
                 </Col>
               </Row>
@@ -72,37 +73,37 @@ class Sliders extends React.Component {
               <Row gutter={24}>
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s1.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s1.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s2.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s2.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s3.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s3.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s4.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s4.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s5.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s5.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s6.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s6.png`} alt="" />
                   </div>
                 </Col>
               </Row>
@@ -111,37 +112,37 @@ class Sliders extends React.Component {
               <Row gutter={24}>
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s1.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s1.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s2.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s2.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s3.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s3.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s4.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s4.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s5.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s5.png`} alt="" />
                   </div>
                 </Col>
 
                 <Col md={4}>
                   <div className="slider-image">
-                    <img src="./assets/images/slider/s6.png" alt="" />
+                    <img src={`${URL_MEDIA}assets/images/slider/s6.png`} alt="" />
                   </div>
                 </Col>
               </Row>

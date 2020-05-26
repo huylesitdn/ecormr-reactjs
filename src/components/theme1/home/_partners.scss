@@ -1,4 +1,4 @@
-@import "../../assets/scss/variables";
+@import "../../../assets/scss/variables";
 
 .partners {
   .partners-title {
@@ -84,17 +84,17 @@
       }
     }
     .air-optix {
-      background: url("../../assets/images/backgrounds/bg1.png") no-repeat
+      background: url("../../../assets/images/backgrounds/bg1.png") no-repeat
         center center;
       background-size: cover;
     }
     .fresh-look {
-      background: url("../../assets/images/backgrounds/bg2.png") no-repeat
+      background: url("../../../assets/images/backgrounds/bg2.png") no-repeat
         center center;
       background-size: cover;
     }
     .easy-fit {
-      background: url("../../assets/images/backgrounds/bg3.png") no-repeat
+      background: url("../../../assets/images/backgrounds/bg3.png") no-repeat
         center center;
       background-size: cover;
     }

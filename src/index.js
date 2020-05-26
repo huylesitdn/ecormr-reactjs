@@ -7,6 +7,8 @@ import Main from './containers/main';
 
 import * as serviceWorker from './serviceWorker';
 
+require('dotenv').config()
+
 ReactDOM.render(
   <React.StrictMode>
     <Main />
