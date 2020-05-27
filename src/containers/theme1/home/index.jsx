@@ -18,7 +18,7 @@ class Home extends React.Component {
     return (
       <div className="home-ctn">
         <Banner />
-        <TopProducts />
+        <TopProducts title1="Products" title2="Our Top Selling Lenses" />
         <BuyColorsContact />
         <DailyDisposable />
         <Partners />

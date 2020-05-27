@@ -1,0 +1,81 @@
+@import "../../../../assets/scss/variables";
+
+.comment-item {
+  margin-bottom: 30px;
+  .comment-header {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 18px;
+    .user {
+      display: inline-flex;
+      align-items: center;
+      width: calc(100% - 100px);
+      .ant-avatar {
+        // width: 60px;
+        // height: 60px;
+        margin-right: 15px;
+      }
+      .info {
+        h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          color: #151515;
+          margin-bottom: 7px;
+        }
+        .rates {
+          .ant-rate {
+            color: #fcca46;
+          }
+          .status {
+            background: #f2994a;
+            border-radius: 3px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+
+            color: #ffffff;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    .times {
+      display: inline-flex;
+      align-items: center;
+      img {
+        margin-right: 7px;
+      }
+      .date-time {
+        width: 90px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #828282;
+        margin: 0;
+      }
+    }
+  }
+  .comment-content {
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #151515;
+      margin-bottom: 10px;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #575757;
+      margin: 0;
+    }
+  }
+}

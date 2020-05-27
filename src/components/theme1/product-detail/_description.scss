@@ -1,0 +1,118 @@
+@import "../../../assets/scss/variables";
+
+.tab-content {
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+    margin-bottom: 28px;
+  }
+  h6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+    margin-bottom: 4px;
+  }
+  h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 28px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+    margin-bottom: 3px;
+  }
+  h5 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 28px;
+    /* identical to box height, or 122% */
+
+    color: #000000;
+    margin-bottom: 23px;
+  }
+  .des-item {
+    margin-bottom: 54px;
+    h4 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      /* or 175% */
+
+      letter-spacing: 0.1em;
+
+      color: #000000;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 33px;
+      /* or 206% */
+
+      letter-spacing: 0.1em;
+
+      color: #000000;
+    }
+  }
+  .des-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    color: #000000;
+  }
+  .prescription {
+    margin-top: 25px;
+    .pre-item {
+      margin-bottom: 6px;
+      background: #ffffff;
+      border: 2px solid #e0e4e8;
+      box-sizing: border-box;
+      box-shadow: 7px 9px 23px rgba(0, 0, 0, 0.02);
+      border-radius: 10px;
+      padding: 8px;
+      .pre-title {
+        margin: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #151515;
+        padding: 8px 24px;
+      }
+      .txt {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #828282;
+        margin: 0;
+        padding: 8px;
+        padding-left: 40px;
+        border-left: 1px solid #E0E4E8;;
+      }
+    }
+  }
+}

@@ -1,18 +1,21 @@
 import React from "react";
-import './_top-products.scss';
+import "./_top-products.scss";
 // ui
 import { Row, Col } from "antd";
 // icons
 import { AiOutlineHeart } from "react-icons/ai";
+import { URL_MEDIA } from "../../../config";
 
 class TopProducts extends React.Component {
   render() {
+    const { title1, title2 } = this.props;
+
     return (
       <div className="home-top-products">
         <div className="container">
           <div className="top-products">
-            <h4>Products</h4>
-            <h2>Our Top Selling Lenses</h2>
+            <h4>{title1}</h4>
+            <h2>{title2}</h2>
             <div className="products">
               <Row gutter={5}>
                 <Col md={6} sm={12} xs={24}>
@@ -23,14 +26,14 @@ class TopProducts extends React.Component {
                       </a>
                       <a href="/" className="add-card">
                         <img
-                          src="./assets/images/icons/shopping-bag.png"
+                          src={`${URL_MEDIA}assets/images/icons/shopping-bag.png`}
                           alt=""
                         />
                       </a>
                     </div>
                     <div className="info">
                       <img
-                        src="./assets/images/products/p1.png"
+                        src={`${URL_MEDIA}assets/images/products/p1.png`}
                         alt="product"
                       />
                       <h6>PureVision Multifocal Contact Lenses</h6>
@@ -55,14 +58,14 @@ class TopProducts extends React.Component {
                       </a>
                       <a href="/" className="add-card">
                         <img
-                          src="./assets/images/icons/shopping-bag.png"
+                          src={`${URL_MEDIA}assets/images/icons/shopping-bag.png`}
                           alt=""
                         />
                       </a>
                     </div>
                     <div className="info">
                       <img
-                        src="./assets/images/products/p1.png"
+                        src={`${URL_MEDIA}assets/images/products/p1.png`}
                         alt="product"
                       />
                       <h6>PureVision Multifocal Contact Lenses</h6>
@@ -87,14 +90,14 @@ class TopProducts extends React.Component {
                       </a>
                       <a href="/" className="add-card">
                         <img
-                          src="./assets/images/icons/shopping-bag.png"
+                          src={`${URL_MEDIA}assets/images/icons/shopping-bag.png`}
                           alt=""
                         />
                       </a>
                     </div>
                     <div className="info">
                       <img
-                        src="./assets/images/products/p1.png"
+                        src={`${URL_MEDIA}assets/images/products/p1.png`}
                         alt="product"
                       />
                       <h6>PureVision Multifocal Contact Lenses</h6>
@@ -119,14 +122,14 @@ class TopProducts extends React.Component {
                       </a>
                       <a href="/" className="add-card">
                         <img
-                          src="./assets/images/icons/shopping-bag.png"
+                          src={`${URL_MEDIA}assets/images/icons/shopping-bag.png`}
                           alt=""
                         />
                       </a>
                     </div>
                     <div className="info">
                       <img
-                        src="./assets/images/products/p1.png"
+                        src={`${URL_MEDIA}assets/images/products/p1.png`}
                         alt="product"
                       />
                       <h6>PureVision Multifocal Contact Lenses</h6>

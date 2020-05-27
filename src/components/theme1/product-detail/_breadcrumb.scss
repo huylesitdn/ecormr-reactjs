@@ -1,0 +1,21 @@
+@import "../../../assets/scss/variables";
+
+.breadcrumb-page {
+  width: 100%;
+  overflow: hidden;
+  background: #e4f2fb;
+  padding: 35px 0;
+  .ant-breadcrumb {
+    .ant-breadcrumb-link {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      /* identical to box height */
+
+      color: #575757;
+    }
+    .ant-breadcrumb-separator {
+    }
+  }
+}
