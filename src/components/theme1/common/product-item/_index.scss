@@ -1,4 +1,4 @@
-@import '../../../../assets/scss/variables';
+@import "../../../../assets/scss/variables";
 
 .product-item {
   background: $bgWhite;
@@ -76,8 +76,42 @@
       text-transform: uppercase;
       color: $colorBlue;
     }
-    &:hover{
+    &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    .actions {
+      .favorite {
+        font-size: 20px;
+      }
+      .add-card {
+        img {
+          width: 20px;
+        }
+      }
+    }
+    .info {
+      h6 {
+        font-size: 12px;
+      }
+      .price {
+        p {
+          font-size: 12px;
+          span {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+    .product-ft {
+      padding: 10px;
+      a.buy-now {
+        font-size: 12px;
+      }
     }
   }
 }

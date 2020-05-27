@@ -27,7 +27,7 @@ class AllProducts extends React.Component {
     let results = [];
     for (let i = 0; i < 16; i++) {
       results.push(
-        <Col md={6} key={i}>
+        <Col md={6} sm={12} xs={24} key={i}>
           <ProductItem />
         </Col>
       );

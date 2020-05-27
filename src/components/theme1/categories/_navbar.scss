@@ -20,18 +20,59 @@
         text-align: center;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #9CADBD;
+        color: #9cadbd;
 
-        &:hover{
+        &:hover {
           cursor: pointer;
           color: $colorBlue;
         }
       }
     }
-    .active{
+    .active {
       border-color: $colorBlue;
-      a{
+      a {
         color: $colorBlue;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-categories {
+    .navbar {
+      .navbar-item {
+        padding: 20px 0;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-categories {
+    .navbar {
+      .navbar-item {
+        padding: 15px 0;
+        margin: 0 15px;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-categories {
+    .navbar {
+      .navbar-item {
+        margin: 0 10px;
+        padding: 10px 0;
+        a {
+          font-size: 11px;
+        }
       }
     }
   }

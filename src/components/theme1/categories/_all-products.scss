@@ -153,3 +153,71 @@
     }
   }
 }
+
+// responsive
+@media (max-width: 768px) {
+  .all-products {
+    padding: 40px 0;
+    .content-category {
+      padding: 30px 45px;
+      .ctn-title {
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .ctn-description {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .sub-categories {
+      h3 {
+        font-size: 14px;
+      }
+      .options {
+        .ant-btn {
+          font-size: 12px;
+          margin: 0 10px;
+          padding: 2px 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .all-products {
+    padding: 30px 0;
+    .content-category {
+      padding: 24px 30px;
+      margin-bottom: 30px;
+      .ctn-title {
+        h3 {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      .ctn-description {
+        p {
+          font-size: 11px;
+          line-height: 20px;
+        }
+      }
+    }
+    .sub-categories {
+      h3 {
+        font-size: 12px;
+      }
+      .options {
+        margin: 24px 0;
+        .ant-btn {
+          font-size: 11px;
+          padding: 0 9px;
+          margin: 0 7px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -31,7 +31,7 @@ class RoutesTheme1 extends React.Component {
         <Content className="main-layout">
         <Switch>
           <Route exact path={`${url}/categories`} component={Categories} />
-          <Route path={`${url}/product/:id`} component={ProductDetail} />
+          <Route path={`${url}/products/:id`} component={ProductDetail} />
           <Route path={`${url}`} component={Home} />
           {/* <Route path="/" component={} /> */}
           {/* <Redirect exact from="/" to="/theme1" /> */}
