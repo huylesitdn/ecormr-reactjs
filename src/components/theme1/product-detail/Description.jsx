@@ -26,12 +26,12 @@ class Description extends React.Component {
         </div>
 
         <Row gutter={48}>
-          <Col md={10} sm={8} xs={24}>
+          <Col md={10} sm={24} xs={24}>
             <div className="view-img">
               <img src={`${URL_MEDIA}assets/images/products/p3.svg`} alt="" />
             </div>
           </Col>
-          <Col md={14} sm={8} xs={24}>
+          <Col md={14} sm={24} xs={24}>
             <div className="des-item">
               <h4>Comfort:</h4>
               <p>

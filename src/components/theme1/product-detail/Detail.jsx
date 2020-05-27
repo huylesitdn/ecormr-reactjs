@@ -119,12 +119,12 @@ class Detail extends React.Component {
 
                     <div className="info-price">
                       <Row gutter={24}>
-                        <Col md={12} xs={24}>
+                        <Col md={13} sm={12} xs={24}>
                           <h4>
                             ₹ 1,499.00 <span>₹ 2,300.00</span>
                           </h4>
                         </Col>
-                        <Col md={12} xs={24}>
+                        <Col md={11} sm={12} xs={24}>
                           <div className="favorite">
                             <a>
                               <AiOutlineHeart /> Add to Wishlist
