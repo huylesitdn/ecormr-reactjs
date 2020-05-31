@@ -317,30 +317,28 @@
   }
 }
 
-
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .detail {
     padding: 60px 0;
-    .detail-ctn{
-      .slider-item{
-        img{
-
+    .detail-ctn {
+      .slider-item {
+        img {
         }
       }
-      .info-detail{
-        h2{
+      .info-detail {
+        h2 {
           font-size: 19px;
         }
-        .des-item{
+        .des-item {
           font-size: 12px;
         }
-        .choose-options{
+        .choose-options {
           margin: 30px 0;
         }
-        .info-price{
-          h4{
+        .info-price {
+          h4 {
             font-size: 24px;
-            span{
+            span {
               font-size: 14px;
             }
           }
@@ -350,15 +348,76 @@
   }
 }
 
-@media(max-width: 768px){
-  .detail{
-    .detail-ctn{
-      .ant-carousel{
+@media (max-width: 768px) {
+  .detail {
+    .detail-ctn {
+      .ant-carousel {
         margin-bottom: 30px;
       }
     }
-    .tabs-info{
+    .tabs-info {
       margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .detail {
+    .detail-ctn{
+      .info-detail{
+        .info-price{
+          h4{
+            text-align: center;
+            font-size: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+          }
+          .favorite{
+            width: 100%;
+            float: none;
+            text-align: center;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .tabs-info {
+      .ant-tabs {
+        .ant-tabs-bar {
+          .ant-tabs-nav {
+            .ant-tabs-tab{
+              font-size: 14px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 376px){
+  .detail{
+    .detail-ctn{
+      // .choose-options{
+      //   .ant-checkbox-group{
+      //     .ant-checkbox-group-item{
+      //       width: 100%;
+      //     }
+      //   }
+      // }
+    }
+    .ant-form{
+      .ant-form-item{
+        .ant-form-item-control{
+          .ant-checkbox-group{
+            .ant-checkbox-group-item{
+              width: 100%;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }

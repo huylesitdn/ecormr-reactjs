@@ -11,6 +11,8 @@ import Login from '../login/index';
 import Register  from '../register/index';
 // theme1
 import RoutesTheme1 from "../theme1/routes"
+// theme2
+import RoutesTheme2 from '../theme2/routes'
 
 class Main extends React.Component {
   constructor(props){
@@ -29,8 +31,9 @@ class Main extends React.Component {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route path="/theme1" component={RoutesTheme1} />
+          <Route path="/theme2" component={RoutesTheme2} />
           {/* <Route path="/" component={} /> */}
-          <Redirect exact from="/" to="/theme1" />
+          <Redirect exact from="/" to="/theme2" />
         </Switch>
       </BrowserRouter>
     );

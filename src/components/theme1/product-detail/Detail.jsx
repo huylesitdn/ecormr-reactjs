@@ -1,9 +1,9 @@
 import React from "react";
 import "./_detail.scss";
 // components
-import Description from './Description';
-import Specifications from './Specifications';
-import Reviews from './Reviews';
+import Description from "./Description";
+import Specifications from "./Specifications";
+import Reviews from "./Reviews";
 // ui
 import { Row, Col, Button, Checkbox, Select, Tabs, Carousel, Form } from "antd";
 import { URL_MEDIA } from "../../../config";
@@ -13,9 +13,9 @@ import { AiOutlineHeart } from "react-icons/ai";
 const { TabPane } = Tabs;
 const { Option } = Select;
 const options = [
-  { label: "Apple", value: "Apple" },
-  { label: "Pear", value: "Pear" },
-  { label: "Orange", value: "Orange" }
+  { label: "Left Eye", value: "Left Eye" },
+  { label: "Right Eye", value: "Right Eye" },
+  { label: "Both Eye", value: "Both Eye" }
 ];
 
 class Detail extends React.Component {
@@ -26,6 +26,7 @@ class Detail extends React.Component {
   onChangeCheckbox = checkedValues => {
     console.log("checked = ", checkedValues);
   };
+
   render() {
     return (
       <div className="detail">

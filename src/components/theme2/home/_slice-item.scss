@@ -1,0 +1,48 @@
+@import "../../../assets/scss/variables";
+
+.slice-item {
+  .sub-top {
+    height: 50vh;
+  }
+  .sub-bottom {
+    height: 50vh;
+    position: relative;
+    .actions-page {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: -15px;
+      bottom: 80px;
+      a {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .bg3 {
+      background: #7875b4;
+    }
+    .bg4 {
+      background: #7875b4;
+    }
+    .bg5 {
+      background: #70b9bf;
+    }
+    .bg6 {
+      background: #df96c4;
+    }
+    .bg7 {
+      background: #369be7;
+    }
+    .bg-white {
+      background: #fff;
+    }
+  }
+}
