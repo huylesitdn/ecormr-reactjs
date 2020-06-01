@@ -11,9 +11,10 @@
     .actions-page {
       transform: rotate(-90deg);
       position: absolute;
-      right: 0;
+      right: -40px;
       z-index: 50;
-      bottom: 80px;
+      bottom: 100px;
+      min-width: 185px;
       a {
         font-style: normal;
         font-weight: 800;
@@ -25,6 +26,10 @@
         &:last-child {
           margin-right: 0;
         }
+      }
+      .scroll-to-shop{
+        color: #fff;
+        margin-left: 15px;
       }
     }
   }
@@ -98,6 +103,21 @@
       color: #2fabf7;
       text-align: center;
     }
+    .color3 {
+      color: #7875b4;
+    }
+    .color4 {
+      color: #8da6cd;
+    }
+    .color5 {
+      color: #70b9bf;
+    }
+    .color6 {
+      color: #df96c4;
+    }
+    .color7 {
+      color: #369be7;
+    }
   }
   .img-s11 {
     margin-left: 15%;
@@ -108,5 +128,53 @@
   .img-s13 {
     margin-left: 60%;
     width: 400px;
+  }
+  .img-s21 {
+    width: 200px;
+    margin-left: 70%;
+  }
+  .img-s22 {
+    width: 200px;
+    margin-left: 57%;
+  }
+  .img-s23 {
+    width: 200px;
+    margin-left: 20%;
+  }
+  .img-s31 {
+    width: 250px;
+    margin-left: 10%;
+  }
+  .img-s32 {
+    width: 250px;
+    margin-left: 50%;
+  }
+  .img-s33 {
+    width: 250px;
+    margin-left: 70%;
+  }
+  .img-s41{
+    width: 100px;
+    margin-left: 20%;
+  }
+  .img-s42{
+    width: 250px;
+    margin-left: 75%;
+  }
+  .img-s51{
+    width: 120px;
+    margin-left: 20%;
+  }
+  .img-s52{
+    width: 300px;
+    margin-left: 62%;
+  }
+  .img-s53{
+    width: 120px;
+    margin-left: 28%;
+  }
+  .img-s54{
+    width: 120px;
+    margin-left: 80%;
   }
 }

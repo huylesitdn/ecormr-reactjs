@@ -4,9 +4,16 @@ import "./_header.scss";
 import { BsSearch, BsBag, BsPerson } from "react-icons/bs";
 
 class HeaderSlice extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
+    const { offsetIndex } = this.props;
+
     return (
-      <div className="header">
+      <div className={`${offsetIndex === 0 ? "colorDark" : ""} header`}>
         <div className="container-fluid">
           <div className="hd-top">
             <ul>
@@ -40,6 +47,9 @@ class HeaderSlice extends React.Component {
               </li>
               <li>
                 <a href="">LENS TYPE</a>
+              </li>
+              <li>
+                <a href="">ACESSORIES</a>
               </li>
             </ul>
           </div>

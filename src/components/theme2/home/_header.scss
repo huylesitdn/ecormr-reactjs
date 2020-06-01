@@ -58,11 +58,27 @@
           text-transform: uppercase;
           padding: 7px 10px;
           color: #fff;
+          &:disabled{
+            cursor: not-allowed !important;
+          }
           &:hover {
             cursor: pointer;
             // color: $colorBlue;
           }
         }
+      }
+    }
+  }
+}
+
+.colorDark{
+  ul{
+    li {
+      svg{
+        color: #000 !important;
+      }
+      a{
+        color: #000 !important;
       }
     }
   }
