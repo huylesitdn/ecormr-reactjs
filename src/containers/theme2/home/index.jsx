@@ -1,9 +1,15 @@
 import React from "react";
 import "./_index.scss";
-import ReactDOM from "react-dom";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { URL_MEDIA } from "../../../config";
-import { Button, Space, Row, Col } from "antd";
+import { Button, Row, Col } from "antd";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
+// components 
 import HeaderSlice from "../../../components/theme2/home/HeaderSlice";
 
 // icons
@@ -13,32 +19,6 @@ import {
   FaPinterestP,
   FaLinkedinIn
 } from "react-icons/fa";
-
-// Little helpers ...
-const url = (name, wrap = false) =>
-  `${
-    wrap ? "url(" : ""
-  }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
-    wrap ? ")" : ""
-  }`;
-const Pink = ({ children }) => (
-  <span style={{ color: "#FF6AC1" }}>{children}</span>
-);
-const Yellow = ({ children }) => (
-  <span style={{ color: "#EFF59B" }}>{children}</span>
-);
-const Lightblue = ({ children }) => (
-  <span style={{ color: "#9AEDFE" }}>{children}</span>
-);
-const Green = ({ children }) => (
-  <span style={{ color: "#57EE89" }}>{children}</span>
-);
-const Blue = ({ children }) => (
-  <span style={{ color: "#57C7FF" }}>{children}</span>
-);
-const Gray = ({ children }) => (
-  <span style={{ color: "#909090" }}>{children}</span>
-);
 
 class Home extends React.Component {
   constructor(props) {
@@ -136,7 +116,7 @@ class Home extends React.Component {
     const { offsetIndex } = this.state;
 
     return (
-      <div className="ex-page" onScroll={this.changeScrollPage}>
+      <div className="home-page" onScroll={this.changeScrollPage}>
         <div className="fixed-content">
           <HeaderSlice offsetIndex={offsetIndex} />
 
@@ -189,6 +169,7 @@ class Home extends React.Component {
 
           <ParallaxLayer offset={0.75} speed={0.25}>
             <img
+            className="main-s1"
               src={`${URL_MEDIA}assets/images/theme2/soflens.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
@@ -230,6 +211,7 @@ class Home extends React.Component {
 
           <ParallaxLayer offset={1.35} speed={2}>
             <img
+            className="main-s2"
               src={`${URL_MEDIA}assets/images/theme2/s1.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
@@ -288,6 +270,7 @@ class Home extends React.Component {
 
           <ParallaxLayer offset={2.38} speed={2}>
             <img
+            className="main-s3"
               src={`${URL_MEDIA}assets/images/theme2/s2.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
@@ -351,6 +334,7 @@ class Home extends React.Component {
 
           <ParallaxLayer offset={3.35} speed={2}>
             <img
+            className="main-s4"
               src={`${URL_MEDIA}assets/images/theme2/s3.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
@@ -413,6 +397,7 @@ class Home extends React.Component {
 
           <ParallaxLayer offset={4.35} speed={2}>
             <img
+            className="main-s5"
               src={`${URL_MEDIA}assets/images/theme2/s4.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
@@ -467,6 +452,7 @@ class Home extends React.Component {
 
           <ParallaxLayer offset={5.35} speed={2}>
             <img
+            className="main-s6"
               src={`${URL_MEDIA}assets/images/theme2/s5.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
@@ -539,6 +525,7 @@ class Home extends React.Component {
 
           <ParallaxLayer offset={6.35} speed={2}>
             <img
+            className="main-s7"
               src={`${URL_MEDIA}assets/images/theme2/s6.png`}
               style={{ display: "block", width: "350px", margin: "0 auto" }}
             />
@@ -576,7 +563,7 @@ class Home extends React.Component {
           >
             <div className="slice-ft">
               <Row gutter={48}>
-                <Col md={6}>
+                <Col md={6} sm={12}>
                   <div className="ft-item">
                     <h3>Information</h3>
                     <ul>
@@ -595,7 +582,7 @@ class Home extends React.Component {
                     </ul>
                   </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={12}>
                   <div className="ft-item">
                     <h3>Customer Service</h3>
                     <ul>
@@ -611,7 +598,7 @@ class Home extends React.Component {
                     </ul>
                   </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={12}>
                   <div className="ft-item">
                     <h3>Extras</h3>
                     <ul>
@@ -628,7 +615,7 @@ class Home extends React.Component {
                     </ul>
                   </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} sm={12}>
                   <div className="ft-item">
                     <h3>My Account</h3>
                     <ul>

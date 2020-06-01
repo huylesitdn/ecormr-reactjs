@@ -1,4 +1,4 @@
-.ex-page {
+.home-page {
   // position: relative;
   .fixed-content {
     .header {
@@ -287,5 +287,160 @@
   .img-s54 {
     width: 120px;
     margin-left: 80%;
+  }
+}
+
+
+
+@media (max-width: 768px){
+  .home-page{
+    .banner{
+      h1{
+        font-size: 60px;
+        line-height: 70px;
+      }
+      h3{
+        font-size: 28px;
+        width: 70%;
+      }
+      ul{
+        li{
+          margin-right: 24px;
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .ctn-bot{
+      h4{
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      h5{
+        font-size: 24px;
+        line-height: 38px;
+        width: 90%;
+      }
+    }
+    .ft-title{
+      margin-top: -80px;
+      h5{
+        font-size: 24px;
+        width: 90%;
+        line-height: 38px;
+      }
+    }
+    .view-all{
+      font-size: 16px;
+    }
+    .slice-ft{
+      .ft-item{
+        margin-bottom: 24px;
+        h3{
+          font-size: 14px;
+        }
+        ul{
+          li{
+            a{
+              font-size: 13px;
+              line-height: 21px;
+            }
+          }
+        }
+      }
+    }
+    // images main
+    .main-s1{
+      width: 50%;
+    }
+    .main-s2{
+      width: 50%;
+      margin-top: 25px !important;
+    }
+    .main-s3{
+      width: 50%;
+    }
+    .main-s4{
+      width: 50%;
+      margin-top: 30px !important;
+    }
+    .main-s5{
+      width: 50%;
+      margin-top: 40px !important;
+    }
+    .main-s6{
+      width: 50%;
+      margin-top: 45px !important;
+    }
+    .main-s7{
+      width: 40% !important;
+    }
+
+    // slice 2
+    .img-s11{
+      width: 15%;
+      margin-left: 1%;
+    }
+    .img-s12{
+      width: 15%;
+      margin-left: 20%;
+    }
+    .img-s13{
+      width: 30%;
+      margin-left: 73%;
+    }
+
+    // slice 3
+    .img-s21{
+      width: 15%;
+      margin-left: 80%;
+    }
+    .img-s22{
+      width: 15%;
+      margin-left: 60%;
+    }
+    .img-s23{
+      width: 15%;
+      margin-left: 10%;
+    }
+
+    // slice 4
+    .img-s31{
+      width: 15%;
+    }
+    .img-s32{
+      width: 15%;
+      margin-left: 60%;
+    }
+    .img-s33{
+      width: 15%;
+      margin-left: 80%;
+    }
+
+    // slice 5
+    .img-s41{
+      width: 8%;
+      margin-left: 10%;
+    }
+    .img-s42{
+      width: 20%;
+      margin-left: 80%;
+    }
+
+    // slice 6
+    .img-s51{
+      margin-left: 10%;
+    }
+    .img-s52{
+      margin-left: 76%;
+      width: 25%;
+    }
+    .img-s53{
+      margin-left: 18%;
+    }
+    .img-s54{
+      margin-left: 70%;
+    }
   }
 }
