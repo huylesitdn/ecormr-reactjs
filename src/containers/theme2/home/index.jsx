@@ -9,7 +9,7 @@ import {
   isBrowser,
   isMobile
 } from "react-device-detect";
-// components 
+// components
 import HeaderSlice from "../../../components/theme2/home/HeaderSlice";
 
 // icons
@@ -39,84 +39,145 @@ class Home extends React.Component {
     let space = this.parallax.space;
     console.log(current, space);
     this.setState({ current, space, spaceOffset: space });
+
+    document.addEventListener(
+      "keydown",
+      e => {
+        this.keyDownTextField(e);
+      },
+      false
+    );
   };
 
-  changeScroll = scroll => {
-    // console.log('scroll: ', scroll)
-    console.log("this.parallax: ", this.parallax);
+  keyDownTextField(e) {
+    var keyCode = e.keyCode;
+    if (keyCode == 38) {
+      // up arrow => prev slice
+      this.onScrollTo("prev");
+    }
+    if (keyCode == 40) {
+      // up arrow => next slice
+      this.onScrollTo("next");
+    }
+  }
+
+  onChangeScroll = e => {
+    console.log(this.parallax);
+    const { currentScroll } = this.state;
+    const { current, offset, space } = this.parallax;
+
+    console.log("current: ", current);
+    console.log("currentScroll: ", currentScroll);
+    console.log("space: ", space);
+    console.log("offset: ", offset);
+    console.log("space * offset: ", space * offset);
+    // check scroll down or up
+
+    if (current > currentScroll) {
+      console.log("scroll down");
+      if (offset < 8) {
+        this.parallax.scrollTo(offset + 1);
+        this.setState({ offsetIndex: offset + 1 });
+      }
+    } else {
+      console.log("scroll up");
+      if (offset > 0) {
+        this.parallax.scrollTo(offset - 1);
+        this.setState({ offsetIndex: offset - 1 });
+      }
+    }
+
+    setTimeout(() => {
+      this.setState({ currentScroll: current });
+    }, 500);
   };
 
   changeScrollPage = async scroll => {
-    const {
-      offsetIndex,
-      spaceOffset,
-      spaceOffsetPrev,
-      currentScroll,
-      action
-    } = this.state;
+    console.log(scroll);
 
-    let currentNow = this.parallax.current;
-    let space = this.parallax.space;
-
-    if (action === "backTop") {
-      if (currentNow === 0) {
-        this.setState({
-          action: null,
-          offsetIndex: 0,
-          currentScroll: 0,
-          spaceOffset: space,
-          spaceOffsetPrev: 0
-        });
-      }
-    } else {
-      if (currentNow > currentScroll) {
-        // scroll down
-
-        if (currentNow === spaceOffset) {
-          // next slice
-          this.setState({
-            offsetIndex: offsetIndex + 1,
-            spaceOffset: spaceOffset + space,
-            spaceOffsetPrev: spaceOffset,
-            currentScroll: currentNow
-          });
-        }
-        await this.parallax.scrollTo(offsetIndex + 1);
-      } else {
-        // scroll up
-
-        if (currentNow === spaceOffsetPrev - space) {
-          // prev slice
-          this.setState({
-            offsetIndex: offsetIndex - 1,
-            spaceOffset: spaceOffsetPrev,
-            spaceOffsetPrev: spaceOffsetPrev - space,
-            currentScroll: currentNow
-          });
-        }
-        await this.parallax.scrollTo(offsetIndex - 1);
-      }
-    }
+    // const {
+    //   offsetIndex,
+    //   spaceOffset,
+    //   spaceOffsetPrev,
+    //   currentScroll,
+    //   action
+    // } = this.state;
+    // let currentNow = this.parallax.current;
+    // let space = this.parallax.space;
+    // if (action === "backTop") {
+    //   if (currentNow === 0) {
+    //     this.setState({
+    //       action: null,
+    //       offsetIndex: 0,
+    //       currentScroll: 0,
+    //       spaceOffset: space,
+    //       spaceOffsetPrev: 0
+    //     });
+    //   }
+    // } else {
+    //   if (currentNow > currentScroll) {
+    //     // scroll down
+    //     if (currentNow >= spaceOffset) {
+    //       // next slice
+    //       this.setState({
+    //         offsetIndex: offsetIndex + 1,
+    //         spaceOffset: spaceOffset + space,
+    //         spaceOffsetPrev: spaceOffset,
+    //         currentScroll: currentNow
+    //       });
+    //     }
+    //     this.parallax.scrollTo(offsetIndex + 1);
+    //   } else {
+    //     // scroll up
+    //     if (currentNow <= spaceOffsetPrev - space) {
+    //       // prev slice
+    //       this.setState({
+    //         offsetIndex: offsetIndex - 1,
+    //         spaceOffset: spaceOffsetPrev,
+    //         spaceOffsetPrev: spaceOffsetPrev - space,
+    //         currentScroll: currentNow
+    //       });
+    //     }
+    //     this.parallax.scrollTo(offsetIndex - 1);
+    //   }
+    // }
   };
 
   onScrollTo = async action => {
     const { offsetIndex } = this.state;
 
-    if (action === "next") {
-      await this.parallax.scrollTo(offsetIndex + 1);
-    } else if (action === "prev") {
-      await this.parallax.scrollTo(offsetIndex - 1);
-    } else {
-      this.setState({ action: "backTop" });
+    console.log("offsetIndex: ", offsetIndex);
+    console.log("this.parallax: ", this.parallax);
+
+    if (action === "next" && offsetIndex < 7) {
+      this.setState({ offsetIndex: offsetIndex + 1 });
+      this.parallax.scrollTo(offsetIndex + 1);
+    } else if (action === "prev" && offsetIndex > 0) {
+      this.setState({ offsetIndex: offsetIndex - 1 });
+      this.parallax.scrollTo(offsetIndex - 1);
+    } else if (action === "top" && offsetIndex === 7) {
+      this.setState({ action: "backTop", offsetIndex: 0 });
       this.parallax.scrollTo(0);
     }
+  };
+
+  onKeyPressed(e) {
+    console.log(e.key);
+  }
+
+  onKeyPressedSlice = e => {
+    console.log(e);
   };
 
   render() {
     const { offsetIndex } = this.state;
 
     return (
-      <div className="home-page" onScroll={this.changeScrollPage}>
+      <div
+        className="home-page"
+        // onScroll={this.onChangeScroll}
+        ref={ref => (this.pageRef = ref)}
+      >
         <div className="fixed-content">
           <HeaderSlice offsetIndex={offsetIndex} />
 
@@ -147,12 +208,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <Parallax
-          ref={ref => (this.parallax = ref)}
-          pages={8}
-          onChange={() => console.log("123123")}
-          onScroll={this.changeScroll}
-        >
+        <Parallax ref={ref => (this.parallax = ref)} pages={8} scrolling={false}>
           {/* ========================== slice main ========================== */}
 
           <ParallaxLayer
@@ -167,9 +223,9 @@ class Home extends React.Component {
             style={{ backgroundColor: "#2FABF7" }}
           />
 
-          <ParallaxLayer offset={0.75} speed={0.25}>
+          <ParallaxLayer offset={0.75} speed={0.1}>
             <img
-            className="main-s1"
+              className="main-s1"
               src={`${URL_MEDIA}assets/images/theme2/soflens.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
@@ -198,7 +254,7 @@ class Home extends React.Component {
 
           <ParallaxLayer
             offset={1.5}
-            speed={-0.5}
+            speed={0}
             style={{ backgroundColor: "#fff" }}
           />
 
@@ -209,22 +265,22 @@ class Home extends React.Component {
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.35} speed={2}>
+          <ParallaxLayer offset={1.35} speed={0.1}>
             <img
-            className="main-s2"
+              className="main-s2"
               src={`${URL_MEDIA}assets/images/theme2/s1.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.5} speed={2}>
+          <ParallaxLayer offset={1.5} speed={0.1}>
             <div className="ctn-bot">
               <h4>Contains 6 Lenses Per Box</h4>
               <h4>Rs 799.00</h4>
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.6} speed={0.5}>
+          <ParallaxLayer offset={1.6} speed={0.1}>
             <img
               className="img-s11"
               src={`${URL_MEDIA}assets/images/theme2/s11.png`}
@@ -232,7 +288,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.75} speed={0.5}>
+          <ParallaxLayer offset={1.75} speed={0.1}>
             <img
               className="img-s12"
               src={`${URL_MEDIA}assets/images/theme2/s12.png`}
@@ -240,7 +296,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.55} speed={0.5}>
+          <ParallaxLayer offset={1.55} speed={0.1}>
             <img
               className="img-s13"
               src={`${URL_MEDIA}assets/images/theme2/s13.png`}
@@ -268,22 +324,22 @@ class Home extends React.Component {
             style={{ backgroundColor: "#fff" }}
           />
 
-          <ParallaxLayer offset={2.38} speed={2}>
+          <ParallaxLayer offset={2.38} speed={0.1}>
             <img
-            className="main-s3"
+              className="main-s3"
               src={`${URL_MEDIA}assets/images/theme2/s2.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2.5} speed={2}>
+          <ParallaxLayer offset={2.5} speed={0.1}>
             <div className="ctn-bot">
               <h4 className="color3">Contains 2 Lens Per Box</h4>
               <h4 className="color3">Rs 649.00</h4>
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2.6} speed={0.5}>
+          <ParallaxLayer offset={2.6} speed={0.1}>
             <img
               className="img-s21"
               src={`${URL_MEDIA}assets/images/theme2/s21.png`}
@@ -291,7 +347,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2.75} speed={0.5}>
+          <ParallaxLayer offset={2.75} speed={0.1}>
             <img
               className="img-s22"
               src={`${URL_MEDIA}assets/images/theme2/s21.png`}
@@ -299,7 +355,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2.55} speed={0.5}>
+          <ParallaxLayer offset={2.55} speed={0.1}>
             <img
               className="img-s23"
               src={`${URL_MEDIA}assets/images/theme2/s21.png`}
@@ -332,15 +388,15 @@ class Home extends React.Component {
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3.35} speed={2}>
+          <ParallaxLayer offset={3.35} speed={0.1}>
             <img
-            className="main-s4"
+              className="main-s4"
               src={`${URL_MEDIA}assets/images/theme2/s3.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3.6} speed={0.5}>
+          <ParallaxLayer offset={3.6} speed={0.1}>
             <img
               className="img-s31"
               src={`${URL_MEDIA}assets/images/theme2/s31.png`}
@@ -348,7 +404,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3.75} speed={0.5}>
+          <ParallaxLayer offset={3.75} speed={0.1}>
             <img
               className="img-s32"
               src={`${URL_MEDIA}assets/images/theme2/s31.png`}
@@ -356,7 +412,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3.55} speed={0.5}>
+          <ParallaxLayer offset={3.55} speed={0.1}>
             <img
               className="img-s33"
               src={`${URL_MEDIA}assets/images/theme2/s31.png`}
@@ -395,15 +451,15 @@ class Home extends React.Component {
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={4.35} speed={2}>
+          <ParallaxLayer offset={4.35} speed={0.1}>
             <img
-            className="main-s5"
+              className="main-s5"
               src={`${URL_MEDIA}assets/images/theme2/s4.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={4.55} speed={0.5}>
+          <ParallaxLayer offset={4.55} speed={0.1}>
             <img
               className="img-s41"
               src={`${URL_MEDIA}assets/images/theme2/s41.png`}
@@ -411,7 +467,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={4.6} speed={0.5}>
+          <ParallaxLayer offset={4.6} speed={0.1}>
             <img
               className="img-s42"
               src={`${URL_MEDIA}assets/images/theme2/s42.png`}
@@ -450,15 +506,15 @@ class Home extends React.Component {
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5.35} speed={2}>
+          <ParallaxLayer offset={5.35} speed={0.1}>
             <img
-            className="main-s6"
+              className="main-s6"
               src={`${URL_MEDIA}assets/images/theme2/s5.png`}
               style={{ display: "block", margin: "0 auto" }}
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5.55} speed={0.5}>
+          <ParallaxLayer offset={5.55} speed={0.1}>
             <img
               className="img-s51"
               src={`${URL_MEDIA}assets/images/theme2/s51.png`}
@@ -466,7 +522,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5.6} speed={0.5}>
+          <ParallaxLayer offset={5.6} speed={0.1}>
             <img
               className="img-s52"
               src={`${URL_MEDIA}assets/images/theme2/s52.png`}
@@ -474,7 +530,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5.75} speed={0.5}>
+          <ParallaxLayer offset={5.75} speed={0.1}>
             <img
               className="img-s53"
               src={`${URL_MEDIA}assets/images/theme2/s51.png`}
@@ -482,7 +538,7 @@ class Home extends React.Component {
             />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5.85} speed={0.5}>
+          <ParallaxLayer offset={5.85} speed={0.1}>
             <img
               className="img-s54"
               src={`${URL_MEDIA}assets/images/theme2/s51.png`}
@@ -523,9 +579,9 @@ class Home extends React.Component {
             </div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={6.35} speed={2}>
+          <ParallaxLayer offset={6.35} speed={0.1}>
             <img
-            className="main-s7"
+              className="main-s7"
               src={`${URL_MEDIA}assets/images/theme2/s6.png`}
               style={{ display: "block", width: "350px", margin: "0 auto" }}
             />
@@ -563,7 +619,7 @@ class Home extends React.Component {
           >
             <div className="slice-ft">
               <Row gutter={48}>
-                <Col md={6} sm={12}>
+                <Col md={6} sm={12} xs={12}>
                   <div className="ft-item">
                     <h3>Information</h3>
                     <ul>
@@ -582,7 +638,7 @@ class Home extends React.Component {
                     </ul>
                   </div>
                 </Col>
-                <Col md={6} sm={12}>
+                <Col md={6} sm={12} xs={12}>
                   <div className="ft-item">
                     <h3>Customer Service</h3>
                     <ul>
@@ -598,7 +654,7 @@ class Home extends React.Component {
                     </ul>
                   </div>
                 </Col>
-                <Col md={6} sm={12}>
+                <Col md={6} sm={12} xs={12}>
                   <div className="ft-item">
                     <h3>Extras</h3>
                     <ul>
@@ -615,7 +671,7 @@ class Home extends React.Component {
                     </ul>
                   </div>
                 </Col>
-                <Col md={6} sm={12}>
+                <Col md={6} sm={12} xs={12}>
                   <div className="ft-item">
                     <h3>My Account</h3>
                     <ul>

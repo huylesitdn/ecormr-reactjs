@@ -91,6 +91,20 @@
 }
 
 // responsive
+@media (max-width: 1024px){
+  .header{
+    .hd-top{
+      margin-bottom: 15px;
+      ul{
+        li{
+          a{
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .header{
     .sc-desktop{
@@ -147,6 +161,30 @@
         align-items: center;
         svg {
           margin-right: 7px;
+        }
+      }
+    }
+  }
+  .colorDark{
+    .hd-mobile{
+      a{
+        color: #000;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 426px){
+  .hd-mobile{
+    .navbar-menu{
+      width: calc(100% - 120px);
+    }
+    .bar-right{
+      width: 120px;
+      a{
+        span{
+          display: none;
         }
       }
     }

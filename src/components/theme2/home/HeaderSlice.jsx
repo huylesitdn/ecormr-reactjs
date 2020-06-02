@@ -36,7 +36,6 @@ class HeaderSlice extends React.Component {
   render() {
     const { offsetIndex } = this.props;
     const { placement, visible } = this.state;
-    console.log("isMobile: ", isMobile);
 
     return (
       <div className={`${offsetIndex === 0 ? "colorDark" : ""} header`}>

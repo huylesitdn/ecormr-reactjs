@@ -292,6 +292,95 @@
 
 
 
+//  ==================== responsive ============
+@media(max-width: 1024px){
+  .home-page{
+    .banner{
+      h1{
+        font-size: 80px;
+        line-height: 90px;
+      }
+      h3{
+        font-size: 32px;
+        width: 50%;
+        line-height: 47px;
+        margin-top: 40px;
+      }
+      ul{
+        li{
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .fixed-content{
+      .actions-page{
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+    .ctn-bot{
+      h4{
+        font-size: 32px;
+        width: 50%;
+      }
+    }
+
+    // main images
+    .main-s1 {
+      width: 40%;
+    }
+    .main-s2{
+      width: 40%;
+    }
+    .main-s3, .main-s4, .main-s5, .main-s6{
+      width: 40%;
+    }
+    .main-s7{
+      width: 30%;
+    }
+
+    // icons
+    .img-s11, .img-s12{
+      width: 14%;
+    }
+    .img-s13{
+      width: 25%;
+      margin-left: 70%;
+    }
+
+    .img-s21, .img-s22, .img-s23{
+      width: 10%;
+    }
+    .img-s21{
+      margin-left: 75%;
+    }
+    .img-s22{
+margin-left: 60%;
+margin-top: 30px;
+    }
+    .img-s23{
+      margin-left: 18%;
+    }
+
+    .img-s31, .img-s32, .img-s33{
+      width: 15%;
+    }
+    .img-s32{
+margin-left: 60%;
+    }
+
+    .img-s41{
+      width: 7%;
+    }
+    .img-s42{
+      width: 15%;
+    }
+  }
+}
+
 @media (max-width: 768px){
   .home-page{
     .banner{
@@ -441,6 +530,78 @@
     }
     .img-s54{
       margin-left: 70%;
+    }
+  }
+}
+
+@media(max-width: 427px){
+  .home-page{
+    .banner{
+      h1{
+        font-size: 32px;
+        line-height: 48px;
+        width: 100%;
+      }
+      h3{
+        font-size: 20px;
+        width: 100%;
+      }
+      ul{
+        li{
+          a{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .ctn-bot{
+      margin-top: 100px;
+      h5{
+        font-size: 18px;
+        line-height: 29px;
+      }
+      h4{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        width: 80%;
+      }
+    }
+    .ft-title{
+      h5{
+        font-size: 18px;
+        line-height: 29px;
+      }
+    }
+    .view-all{
+      font-size: 14px;
+    }
+    .slice-ft{
+      width: 90%;
+      .ft-item{
+        h3{
+          font-size: 13px;
+          line-height: 19px;
+        }
+        ul{
+          li{
+            a{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .slice-ft-bot{
+        margin-top: 0;
+        .socials{
+          a{
+            font-size: 14px;
+          }
+        }
+        p{
+          font-size: 13px;
+        }
+      }
     }
   }
 }
